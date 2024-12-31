@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "715519396211",
+    "firebase_url": "https://fyp2-508db-default-rtdb.firebaseio.com",
+    "project_id": "fyp2-508db",
+    "storage_bucket": "fyp2-508db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715519396211:android:d07c0d5054896cb92cdd06",
+        "android_client_info": {
+          "package_name": "com.aqil.fyp2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG2xv0Dvfih4qWC68FAAIxW3JgKOrv2MU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

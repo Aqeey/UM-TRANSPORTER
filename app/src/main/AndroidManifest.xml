@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FYP2"
+        tools:targetApi="31">
+        <activity
+            android:name=".driver.SettingDriver"
+            android:exported="false" />
+        <activity
+            android:name=".SettingPassenger"
+            android:exported="false" />
+        <activity
+            android:name=".driver.AcceptOrderDriver"
+            android:exported="false" />
+        <activity
+            android:name=".FindDriverPassenger"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCCdceul4mZWA1W3BsXccF5cVid8_Sji0M" />
+
+        <activity
+            android:name=".driver.DriverRegister"
+            android:exported="false" />
+        <activity
+            android:name=".driver.DriverHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".driver.DriverMapsFragment"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
+            android:exported="false"
+            android:label="@string/title_activity_home_page" />
+        <activity
+            android:name=".PassengerLogin"
+            android:exported="false" />
+        <activity
+            android:name=".driver.DriverLogin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

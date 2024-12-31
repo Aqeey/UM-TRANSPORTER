@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsFragment" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="550dp"
+            android:fontFamily="@font/font"
+            android:text="ORDER" />
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="550dp"
+            android:fontFamily="@font/font"
+            android:text="ORDER DETAIL" />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:id="@+id/driverInfo"
+        android:layout_gravity="top"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/driverProfileimage"
+            android:layout_width="100sp"
+            android:layout_height="150sp"
+            android:padding="20sp"
+            android:src="@drawable/imageprofile" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driverName"
+                android:fontFamily="@font/font"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driverPhoneNum"
+                android:fontFamily="@font/font"
+                android:textSize="20sp"
+                android:layout_marginTop="60dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driverCar"
+                android:fontFamily="@font/font"
+                android:textSize="20sp"
+
+                android:layout_marginTop="80dp"
+                >
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driverPlate"
+                android:fontFamily="@font/font"
+                android:textSize="20sp"
+                android:layout_marginTop="100dp"
+/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
+
+
+
